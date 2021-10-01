@@ -37,7 +37,7 @@ def nextPermutation(nums):
             swap(nums,0,1)
             return nums
         
-        for i in reversed(range(1,len(nums))):
+        for i in reversed(range(1,len(nums)))
             
             if nums[i-1] > nums[i] and i-1== 0:
                 return nums.sort()
