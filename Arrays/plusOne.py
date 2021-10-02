@@ -18,7 +18,9 @@
 
 digits1 = [9,9,9]
 digits2 = [9,9]
+# Both solutions are O(n) time, O(n) space
 
+#Solution 1
 def plusOne1(digits):
 
 	largeInteger = 0
@@ -40,10 +42,11 @@ def plusOne1(digits):
 	if idx == len(digits) and largeInteger !=0:
 		digits.append(largeInteger%10)
 
-	digits = digits[::-1]
+	
+	return digits[::-1]
 
-	return digits
 
+# Solution 2
 def plusOne2(digits):
 
 	for i in reversed(range(len(digits))):
